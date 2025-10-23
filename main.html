@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Accessible Portfolio</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<header>
+		<h1 role="heading">My Accessible Portfolio</h1>
+	</header>
 
+	<nav role="navigation">
+		<a href="#about">About</a> |
+		<a href="#projects">Projects</a> |
+		<a href="#contact">Contact</a>
+	</nav>
+
+	<section id="about">
+		<img role="img" src="profile.jpg" alt="Profile picture of the portfolio owner">
+		<p>
+			Hello! I’m a passionate web developer focused on creating clean, accessible, and user-friendly websites.
+			This portfolio showcases my projects and technical skills.
+		</p>
+	</section>
+
+	<section id="projects">
+		<h2>My Projects</h2>
+		<ul role="list">
+			<li role="listitem">Personal Portfolio Website</li>
+			<li role="listitem">Weather Forecast App</li>
+			<li role="listitem">Task Management System</li>
+		</ul>
+	</section>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
